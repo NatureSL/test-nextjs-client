@@ -19,12 +19,12 @@ export function useSignInForm() {
     },
   });
 
-  const errorMessage = signInMutation.error ? "Sign in failed" : undefined;
+  const errorMessage =  signInMutation.error ? 'Sign in failed' :  undefined
 
-  return {
+  return{
     register,
     errorMessage,
-    handleSubmit: handleSubmit((data) => signInMutation.mutate(data)),
+    handleSubmit: handleSubmit((data)=>signInMutation.mutate(data)),
     isPending: signInMutation.isPending,
-  };
+  }
 }
