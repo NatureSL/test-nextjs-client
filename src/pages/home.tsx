@@ -7,6 +7,7 @@ import { UiLink } from "@/shared/ui/ui-link";
 import { UiSpinner } from "@/shared/ui/ui-spinner";
 import { UiPageSpinner } from "@/shared/ui/ui-page-spinner";
 import { UiHeader } from "@/shared/ui/ui-header";
+import { SignOutButton } from "@/features/auth/ui/sign-out-button";
 
 
 export function HomePage() {
@@ -17,9 +18,9 @@ export function HomePage() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24`}
+      className={`flex min-h-screen flex-col  justify-between `}
     >
-      <UiHeader right={<div>{data?.email}</div>} />
+      <UiHeader right={<div>{data?.email}<SignOutButton></SignOutButton></div>} />
       <UiButton variant="primary">primary</UiButton>
       <UiButton variant="secondary">primary</UiButton>
       <UiButton variant="outlined">primary</UiButton>

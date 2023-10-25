@@ -15,7 +15,7 @@ return (
         {
           primary: "text-white bg-teal-500 hover:bg-teal-600 disabled:opacity-50 shadow shadow-teal-500/30",
           secondary: "text-white bg-rose-500 hover:bg-teal-600 disabled:opacity-50 shadow shadow-teal-500/30",
-          outlined: "border border-slate-300 hover:bg-slate-500 disabled:opacity-50",
+          outlined: "border border-slate-300 hover:border-slate-500 disabled:opacity-50",
         }[variant],
       )}
     />
